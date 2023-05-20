@@ -128,7 +128,7 @@
         <center>
         <section id="registration" class="section" style="padding-bottom: 50px;">
         <h2 id="registers">Register</h2>
-        <form method="post" action="" id="formRegistration" >
+        <form method="post" action="project.html" id="formRegistration" >
                 <div class="element">
                 <label for="firstname">First Name</label><br>
                 <input type="text" name="firstname" id="firstname" placeholder="Ex: Radhika" required><br>
@@ -146,7 +146,7 @@
 
                 <div class="element">
                 <label for="dob">Date of Birth</label><br>
-                <input type="datetime-local" name="dob" id="dob" placeholder="DD/MM/YYYY" required><br>
+                <input type="date" name="dob" id="dob" placeholder="DD/MM/YYYY" required><br>
                 </div>
 
                 <div class="element">
@@ -164,7 +164,7 @@
                 <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="Verify Password" required><br>
                 </div>
 
-                <button type="submit" name="register" value="Register" >Register</button>
+                <button type="submit" name="register" value="Register"  >Register</button>
                 <br>
                 <br>
          </form>
