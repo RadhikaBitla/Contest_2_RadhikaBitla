@@ -1,0 +1,175 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Contest 2
+        </title>
+        <link rel="stylesheet" type="text/css" href="project.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <main style="font-family: 'Noto Serif', serif;">
+        <nav id="navigation">
+            <div class="click" id="ls">Library System</div>
+            <div class="click"id="books"><a href="#tableDiv">Books</a></div>
+            <div class="click" id="register"><a href="#registration">Register</a></div> 
+            <div class="click" id="contact">Contact us</div>
+            <div class="click" id="login">Login</div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <center>
+        <section id="tableDiv" class="section">
+            <h2 id="caption">Books</h2>
+            <table border="1px" id="mainTable" class="E" cellpadding="10px" >
+                <thead>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <table class="rows" border="6px">
+                            <thead>
+                                <th>THE GUIDE BY R.K. NARAYAN</th>
+                            </thead>
+                            <tbody>
+                                <tr><td>Publication Date:20/3/23</td></tr>
+                                <tr><td>Page Count:250</td></tr>
+                                <tr><td>ISBN: 120-45892347248</td></tr>
+                            </tbody>
+                            </table>
+                        </td>
+                        <td>Narayan</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <table class="rows" border="6px">
+                                <thead>
+                                    <th>MALGUDI DAYS BY R.K. NARAYAN</th>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Publication Date:20/3/20</td></tr>
+                                    <tr><td>Page Count:150</td></tr>
+                                    <tr><td>ISBN: 120-45892347248</td></tr>
+                                </tbody>
+                                </table>
+                        </td>
+                        <td>NARAYAN</td>
+                        <td>Fiction</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <table class="rows" border="6px">
+                                <thead>
+                                    <th>THE PRIVATE LIFE OF AN INDIAN PRINCE BY MULK RAJ ANAND</th>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Publication Date:20/5/01</td></tr>
+                                    <tr><td>Page Count:200</td></tr>
+                                    <tr><td>ISBN: 120-45892347248</td></tr>
+                                </tbody>
+                                </table>
+                        </td>
+                        <td>Mulk Raj Anand</td>
+                        <td>Advanture</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <table class="rows" border="6px">
+                            <thead>
+                                <th>UNTOUCHABLE BY MULK RAJ ANAND</th>
+                            </thead>
+                            <tbody>
+                                <tr><td>Publication Date:2000</td></tr>
+                                <tr><td>Page Count:250</td></tr>
+                                <tr><td>ISBN: 120-45892347248</td></tr>
+                            </tbody>
+                            </table></td>
+                        <td>Anand</td>
+                        <td>Genre 1</td>
+                        <td>Available</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <table class="rows" border="6px">
+                            <thead>
+                                <th>TRAIN TO PAKISTAN</th>
+                            </thead>
+                            <tbody>
+                                <tr><td>Publication Date:2000</td></tr>
+                                <tr><td>Page Count:250</td></tr>
+                                <tr><td>ISBN: 120-45892347248</td></tr>
+                            </tbody>
+                            </table></td>
+                        <td>KHUSHWANT SINGH</td>
+                        <td>History</td>
+                        <td>Available</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        </center>
+        <center>
+        <section id="registration" class="section" style="padding-bottom: 50px;">
+        <h2 id="registers">Register</h2>
+        <form method="post" action="" id="formRegistration" >
+                <div class="element">
+                <label for="firstname">First Name</label><br>
+                <input type="text" name="firstname" id="firstname" placeholder="Ex: Radhika" required><br>
+                </div>
+
+                <div class="element">
+                <label for="lastname">Last Name</label><br>
+                <input type="text" name="lastname" id="lastname" placeholder="Ex: Bitla" required><br>
+                </div>
+
+                <div class="element">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email" placeholder="Ex: abc@gmail.com" required><br>
+                </div>
+
+                <div class="element">
+                <label for="dob">Date of Birth</label><br>
+                <input type="datetime-local" name="dob" id="dob" placeholder="DD/MM/YYYY" required><br>
+                </div>
+
+                <div class="element">
+                <label for="age">Age</label><br>
+                <input type="number" name="age" id="age" min="5" max="100" placeholder="Enter your age" required><br>
+                </div>
+
+                <div class="element">
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Must have at least 6 characters' : ''); if(this.checkValidity()) form.password_two.pattern = this.value;" placeholder="Password" required><br>
+                </div>
+
+                <div class="element">
+                <label for="confirmpassword">Confirm Password</label><br>
+                <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" pattern="^\S{6,}$" onchange="this.setCustomValidity(this.validity.patternMismatch ? 'Please enter the same Password as above' : '');" placeholder="Verify Password" required><br>
+                </div>
+
+                <button type="submit" name="register" value="Register" >Register</button>
+                <br>
+                <br>
+         </form>
+        </section>
+        </center>
+    </main>
+    </body>
+</html>
